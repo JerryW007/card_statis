@@ -1,0 +1,18 @@
+[
+    {
+        "name":"深圳通MOT",
+        "appCode":4755
+    },{
+        "name":"重庆",
+        "appCode":1029
+    },{
+        "name":"长安通MOC",
+        "appCode":1029
+    },{
+        "name":"长安通MOT",
+        "appCode":1029
+    },{
+        "name":"厦门",
+        "appCode":1029
+    }
+]

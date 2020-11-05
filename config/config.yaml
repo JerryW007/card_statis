@@ -1,0 +1,82 @@
+datasource:
+    cloud:
+      type: com.zaxxer.hikari.HikariDataSource
+      jdbc-url: rm-uf6hhgtirxr619q7k.mysql.rds.aliyuncs.com:3306/fp_business_db
+      username: dev_account
+      password: 9CrgLlsDN9QlitQFRNW9
+    hub:
+      type: com.zaxxer.hikari.HikariDataSource
+      jdbc-url: rm-uf6hhgtirxr619q7k.mysql.rds.aliyuncs.com:3306/transit2xdb
+      username: dev_account
+      password: 9CrgLlsDN9QlitQFRNW9
+    changat:
+      type: com.zaxxer.hikari.HikariDataSource
+      jdbc-url: rm-uf6hhgtirxr619q7k.mysql.rds.aliyuncs.com:3306/gateway_changat_cpuat
+      username: dev_account
+      password: 9CrgLlsDN9QlitQFRNW9
+    suzhoumoc:
+      type: com.zaxxer.hikari.HikariDataSource
+      jdbc-url: rm-uf6hhgtirxr619q7k.mysql.rds.aliyuncs.com:3306/suzhoutong2xdb
+      username: dev_account
+      password: 9CrgLlsDN9QlitQFRNW9
+    shiyan:
+      type: com.zaxxer.hikari.HikariDataSource
+      jdbc-url: rm-uf6hhgtirxr619q7k.mysql.rds.aliyuncs.com:3306/gateway_shiyan
+      username: dev_account
+      password: 9CrgLlsDN9QlitQFRNW9
+    chongqing:
+      type: com.zaxxer.hikari.HikariDataSource
+      jdbc-url: rm-uf6hhgtirxr619q7k.mysql.rds.aliyuncs.com:3306/gateway_chongqing
+      username: dev_account
+      password: 9CrgLlsDN9QlitQFRNW9
+    wuhanmoc:
+      type: com.zaxxer.hikari.HikariDataSource
+      jdbc-url: rm-uf6hhgtirxr619q7k.mysql.rds.aliyuncs.com:3306/gateway_wuhan
+      username: dev_account
+      password: 9CrgLlsDN9QlitQFRNW9
+    lingnantong:
+      type: com.zaxxer.hikari.HikariDataSource
+      jdbc-url: rm-uf6hhgtirxr619q7k.mysql.rds.aliyuncs.com:3306/lnt_tsm2
+      username: dev_account
+      password: 9CrgLlsDN9QlitQFRNW9
+    shenzhenmoc:
+      type: com.zaxxer.hikari.HikariDataSource
+      jdbc-url: rm-uf6hhgtirxr619q7k.mysql.rds.aliyuncs.com:3306/gateway_shenzt
+      username: dev_account
+      password: 9CrgLlsDN9QlitQFRNW9
+    guangxi:
+      type: com.zaxxer.hikari.HikariDataSource
+      jdbc-url: rm-uf6hhgtirxr619q7k.mysql.rds.aliyuncs.com:3306/gateway_guangxi
+      username: dev_account
+      password: 9CrgLlsDN9QlitQFRNW9
+    beijingmot:
+      type: com.zaxxer.hikari.HikariDataSource
+      jdbc-url: rm-uf6hhgtirxr619q7k.mysql.rds.aliyuncs.com:3306/gateway_beijing_mot
+      username: dev_account
+      password: 9CrgLlsDN9QlitQFRNW9
+    beijingmoc:
+      type: com.zaxxer.hikari.HikariDataSource
+      jdbc-url: rm-uf6hhgtirxr619q7k.mysql.rds.aliyuncs.com:3306/gateway_beijing
+      username: dev_account
+      password: 9CrgLlsDN9QlitQFRNW9
+    shanghai:
+      type: com.zaxxer.hikari.HikariDataSource
+      jdbc-url: rm-uf6hhgtirxr619q7k.mysql.rds.aliyuncs.com:3306/gateway_shanghai
+      username: dev_account
+      password: 9CrgLlsDN9QlitQFRNW9
+    shenzhentongmot:
+      type: com.zaxxer.hikari.HikariDataSource
+      jdbc-url: rm-uf6hhgtirxr619q7k.mysql.rds.aliyuncs.com:3306/gateway_shenzhen_mot
+      username: dev_account
+      password: 9CrgLlsDN9QlitQFRNW9
+    nanjingmot:
+      type: com.zaxxer.hikari.HikariDataSource
+      jdbc-url: rm-uf6hhgtirxr619q7k.mysql.rds.aliyuncs.com:3306/gateway_nanjing
+      username: dev_account
+      password: 9CrgLlsDN9QlitQFRNW9
+    shanghaimot:
+      type: com.zaxxer.hikari.HikariDataSource
+      jdbc-url: rm-uf6hhgtirxr619q7k.mysql.rds.aliyuncs.com:3306/gateway_shanghai
+      username: dev_account
+      password: 9CrgLlsDN9QlitQFRNW9
+

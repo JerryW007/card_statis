@@ -1,0 +1,9 @@
+{
+    "dependencies": {
+      "d3": "registry:npm/d3#3.0.0+20160723033700"
+    },
+    "globalDependencies": {
+      "moment": "registry:dt/moment#2.11.1+20161010105546"
+    }
+  }
+  

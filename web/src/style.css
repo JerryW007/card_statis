@@ -1,0 +1,157 @@
+
+.column {
+	padding: 0.5em!important;
+}
+
+div.graph.legend {
+	position: absolute;
+	text-align: right;
+	right: 10px;
+	font-size: 80%;
+}
+
+div.graph.legend span {
+	display:block;
+	line-height: 1.1;
+
+}
+
+body {
+	height: 100%;
+	overflow: scroll;
+}
+
+html {
+	overflow: hidden;
+}
+
+table.logs {
+	border: 1px solid black;
+	width: 100%;
+}
+
+table.logs tr.page td {
+	background-color: yellow;
+}
+
+table.logs td.page {
+	background-color: yellow;
+}
+
+table.logs td.error {
+	color: red;
+}
+
+table.logs td {
+	border: 1px solid black;
+	font-size: 12px;
+}
+
+table.logs .ip {
+	font-size: 10px;
+}
+
+table.logs tr.head td {
+	background: #ccc;
+	font-weight: 800;
+}
+
+table.sliced tr.selected td {
+	font-weight: bold;
+	background-color:#eea;
+}
+
+table.sliced tr td.divider {
+	border-left: 1px solid #888;
+	border-right: 1px solid #888;
+}
+
+table.sliced tbody tr:hover td {
+	background-color: yellow;
+}
+
+table.sliced thead:hover  {
+	background-color: rgb(184, 181, 181)!important;
+	color: rgb(4, 99, 86);
+}
+
+table.sliced td {
+	border-bottom: 1px solid #ccc;
+}
+
+table tr.overline td {
+	border-top: 1px solid #ccc;
+}
+
+table tr.underline td {
+	border-bottom: 1px solid #ccc;
+}
+
+table.highlight tr:hover {
+	background-color:steelblue!important;
+	color:white;
+}
+
+table.logs tr.separator {
+	background: #f8f8cc;
+}
+
+table.logs td.selectable {
+	cursor: pointer;
+}
+
+table.logs td.selectable:hover {
+	background: yellow;
+}
+
+input.search {
+	font-family: inherit;
+	font-size: 20px;
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+table.ui.table.tight td {
+	padding: 2px 5px;
+}
+
+table.ui.table tr:hover {
+	background: yellow;
+	cursor: pointer;
+}
+
+table.ui.table tr.statusok td {
+	background: #f8f8f8;
+	color: #888;
+}
+
+
+table.ui.table.zeropad th {
+	padding: 0;
+}
+
+table.ui.table.zeropad td {
+	padding: 5px 0 ;
+}
+
+.list-div:hover {
+	cursor: pointer;
+	background: yellow;
+}
+
+.simTable small {
+	vertical-align: middle;
+	height: 100%;
+}
+
+a:hover{
+	cursor: pointer;
+}
+
+.simTable small > small, .simTable small > b > small{
+	display: inline-block;
+	-webkit-transform-origin-x: 0;
+	transform: scale(.85);
+    -webkit-transform: scale(.85);
+}

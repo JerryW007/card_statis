@@ -1,0 +1,25 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "PTA 业务数据统计系统",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wangchao",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^5.0.0",
+    "d3": "^6.2.0",
+    "es6-promise": "^4.2.8",
+    "file-loader": "^6.2.0",
+    "store2": "^2.12.0",
+    "ts-loader": "^8.0.5",
+    "typescript": "^4.0.3",
+    "universal-router": "^9.0.1",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.5.1",
+    "whatwg-fetch": "^3.4.1"
+  }
+}
