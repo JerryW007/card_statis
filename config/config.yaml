@@ -1,4 +1,9 @@
 datasource:
+    pcs:
+      type: com.zaxxer.hikari.HikariDataSource
+      jdbc-url: localhost:3306/pta_pcs_db
+      username: root
+      password: 123456
     cloud:
       type: com.zaxxer.hikari.HikariDataSource
       jdbc-url: rm-uf6hhgtirxr619q7k.mysql.rds.aliyuncs.com:3306/fp_business_db

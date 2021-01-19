@@ -17,7 +17,7 @@ import (
 var mainLog *logrus.Entry
 
 func init() {
-	mainLog = logrus.WithFields(logrus.Fields{"Server": "[Main]"})
+	mainLog = logrus.WithFields(logrus.Fields{"\tServer": "Main"})
 }
 
 func main() {

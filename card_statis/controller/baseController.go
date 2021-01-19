@@ -47,7 +47,7 @@ func NewHTTPServer(staging bool, showSQL bool, env string) *BaseController {
 	server.mutex = new(sync.Mutex)
 	server.ready = sync.NewCond(&sync.Mutex{})
 	server.waiting = true
-	server.Entry = logrus.WithFields(logrus.Fields{"Server": "HTTPServer"})
+	server.Entry = logrus.WithFields(logrus.Fields{"\tServer": "HTTPServer"})
 	manager, _ := golongpoll.StartLongpoll(golongpoll.Options{
 		MaxLongpollTimeoutSeconds:      60,
 		MaxEventBufferSize:             200,
@@ -169,6 +169,7 @@ func (server *BaseController) Listen(port string) bool {
 	apirouter.HandleFunc("/status", server.statusHandler)
 	apirouter.HandleFunc("/{city}/perso", server.addResponseHeaders(server.statByMinuteHandler))
 	apirouter.HandleFunc("/{city}/refund", server.addResponseHeaders(server.getRefundInfoHandler))
+	apirouter.HandleFunc("/addRuler", server.addResponseHeaders(server.addAcmLogRulerHandler))
 
 	server.WithField("port", port).Info("start listen")
 	listener, err := net.Listen("tcp", port)
@@ -223,8 +224,8 @@ func (server *BaseController) addResponseHeaders(fn func(r *http.Request) HTTPRe
 		if r.Header["Access-Control-Request-Headers"] != nil {
 			allowHeader = r.Header["Access-Control-Request-Headers"][0]
 		}
-		w.Header().Set("Server", "hmgo-mmyx")
-		w.Header().Set("X-Powered-By", "hmgo-mmyx/1.0")
+		w.Header().Set("Server", "hmgo-pcs")
+		w.Header().Set("X-Powered-By", "hmgo-pcs/1.0")
 		w.Header().Set("Access-Control-Allow-Origin", origin)
 		w.Header().Set("Access-Control-Allow-Credentials", "true")
 		w.Header().Set("Access-Control-Allow-Methods", "*")
