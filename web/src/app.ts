@@ -14,7 +14,7 @@ class About extends Component {
 
 }
 export var ui = Component.create(UI);
-// ui.tabs.add("perso",Component.create(Perso));
+ui.tabs.add("perso",Component.create(Perso));
 // ui.tabs.add("recharge",Component.create(Recharge));
 // ui.tabs.route();
 export var app = {

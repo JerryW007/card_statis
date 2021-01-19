@@ -4,6 +4,7 @@ import (
 	"cardStatis/config"
 	"fmt"
 	"log"
+	"os"
 	"strings"
 	"sync"
 	"time"
@@ -27,7 +28,8 @@ type AsyncService struct {
 //Services 服务组合基础结构体
 type Services struct {
 	*AsyncService
-	Perso *PersoServer
+	Perso  *PersoServer
+	Refund *RefundServer
 }
 
 //ServicesInit 初始化服务基础结构体
@@ -40,13 +42,14 @@ func (server *Services) ServicesInit(helper config.Helper, showSQL bool, env str
 		connection, isSucc := connectDB(url)
 		if !isSucc {
 			log.Printf("初始化城市数据库连接失败: %s", key)
-			continue
+			os.Exit(-1)
 		}
 		connection.LogMode(showSQL)
 		log.Printf("初始化城市数据库连接成功: %s", key)
 		server.cityDbs[key] = connection
 	}
 	server.Perso = server.NewPersoServer()
+	server.Refund = server.NewRefundServer()
 }
 
 //InitAsyncServie 初始化服务结构体父级

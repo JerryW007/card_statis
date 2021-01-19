@@ -168,6 +168,7 @@ func (server *BaseController) Listen(port string) bool {
 	apirouter := router.PathPrefix("/pcs/v1/platform").Subrouter()
 	apirouter.HandleFunc("/status", server.statusHandler)
 	apirouter.HandleFunc("/{city}/perso", server.addResponseHeaders(server.statByMinuteHandler))
+	apirouter.HandleFunc("/{city}/refund", server.addResponseHeaders(server.getRefundInfoHandler))
 
 	server.WithField("port", port).Info("start listen")
 	listener, err := net.Listen("tcp", port)
